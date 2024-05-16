@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dripped Out Clothing</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<body style="background-color: #2357a3;">
+
+
+
+<div class="header">
+
+
+
+<div class="container">
+	<div class="navbar">
+	<div class="logo">
+    <img src="C:\Users\froze\Downloads\Fullo_logo-removebg-preview.png" width="200px">
+    </div>
+	<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>       
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+	</nav>
+    <style>       
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            float: left;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product-info {
+            margin-top: 10px;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .product-price {
+            color: green;
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 10px;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        .cart {
+            float: right;
+            margin-right: 20px;
+        }
+        .cart-icon {
+            font-size: 24px;
+        }
+        .cart-count {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i>
+        <div class="cart-count">0</div>
+    </div>
+    <div class="product-card">
+        <img src="C:\Users\froze\Downloads\[removal.ai]_d76b34d1-7948-4767-97c8-ab95d1e6341a-a03c0859-4bc6-4515-a3fd-b5519d66b109-0f9200a706200a4809a42210f62abe5a.png">
+        <div class="product-info">
+            <div class="product-name">Skeletal</div>
+            <div class="product-price">₱849</div>
+            <button class="add-to-cart" onclick="addToCart('Skeletal', 29.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="C:\Users\froze\Downloads\61I-GdW0m7L._AC_UL600_SR600_600-removebg-preview.png">
+        <div class="product-info">
+            <div class="product-name">Closed Hood</div>
+            <div class="product-price">₱549</div>
+            <button class="add-to-cart" onclick="addToCart('Closed Hood', 34.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="C:\Users\froze\Downloads\y2k-dimond-heart-hoodie-50347426087253_1600x-removebg-preview.png">
+        <div class="product-info">
+            <div class="product-name">Diamond Heart</div>
+            <div class="product-price">₱649</div>
+            <button class="add-to-cart" onclick="addToCart('Diamond Heart', 39.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        let cartCount = 0;
+
+        function addToCart(productName, price) {
+            cartCount++;
+            updateCartCount(cartCount);
+          
+        }
+
+        function updateCartCount(count) {
+            document.querySelector('.cart-count').textContent = count;
+        }
+    </script>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+				<h3><font color="black">Download Our App</h3>
+				<p><font color="black">Download App for Android and Ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="C:\Users\froze\Downloads\en_badge_web_generic-removebg-preview.png">
+						<img src="C:\Users\froze\Downloads\png-transparent-itunes-app-store-apple-logo-apple-text-rectangle-logo-removebg-preview.png">			
+				</div>
+				<div class="footer-col-2">
+				<img src="">
+				<p><font color="black">Download App for Android and Ios mobile phone.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3><font color="black">Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>		
+				<div class="footer-col-4">
+					<h3><font color="black">Follow us here</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>Youtube</li>
+					</ul>	
+			</div>
+			<hr>
+			<p class="Copyright"><font color="black">Copyright 2024 - Dripped Out Clothing</p>
+		</div>
+	</div>
+
+
+</body>
+</html>
+</body>
+</html>
